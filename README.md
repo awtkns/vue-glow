@@ -12,7 +12,7 @@ npm install vue-glow
   I am GLOWING!
 </VueGlow>
 
-<VueGlow color="red" intense>
+<VueGlow color="red" intense >
   I am GLOWING bright red!
 </VueGlow>
 ```
