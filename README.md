@@ -1,5 +1,5 @@
 # vue-glow
-Vue-glow is a simple no dependency (other then vue) packege that allows you to give dynamic underglow for components. Vue-glow was initailly built to extend vuetify's capabilities. 
+Vue-glow is a simple vue compenent that allows components to be given underglow / elevation effects. Vue-glow was initailly built to extend vuetify's capabilities. The dynamic glow effect was done in pure css.
 
 ## Installation
 ```
@@ -10,11 +10,11 @@ npm install vue-glow
 ```javascript
 <VueGlow>
   I am GLOWING!
-</ VueGlow>
+</VueGlow>
 
 <VueGlow color="red" intense>
   I am GLOWING bright red!
-</ VueGlow>
+</VueGlow>
 ```
 
 ## Props
