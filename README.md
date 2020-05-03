@@ -9,7 +9,7 @@ npm install vue-glow
 ```
 
 ## Usage
-```javascript
+```html
 <VueGlow>
   I am GLOWING!
 </VueGlow>
