@@ -1,5 +1,6 @@
 # vue-glow
 ![Node.js CI](https://github.com/adam-watkins/vue-glow/workflows/Node.js%20CI/badge.svg?branch=master)
+![Npm Version](https://img.shields.io/npm/v/vue-glow.svg)
 
 Vue-glow is a simple vue compenent that allows components to be given underglow / elevation effects. Vue-glow was initailly built to extend vuetify's capabilities. The dynamic glow effect was done in pure css.
 
