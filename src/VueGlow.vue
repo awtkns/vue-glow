@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <div :style="glow">
-      <div style="height: 200px; width: 400px" />
+  <div :style="roundedStyle">
+    <div id="glow" :style="glow">
+      <slot />
     </div>
   </div>
 </template>
@@ -9,22 +9,28 @@
 <script>
 import { glowStyle } from './underglow'
 export default {
-  name: 'App',
+  name: 'v-glow',
   props: {
     color: {
       type: String,
       default: 'green'
     },
     elevation: {
-      type: Number,
-      default: 24
+      default: 12
     },
     intense: {
       type: Boolean,
       default: false
-    }
+    },
+    rounded: Boolean,
+    flat: Boolean
   },
   computed: {
+    roundedStyle() {
+      if (this.flat) return null
+      else if (typeof this.rounded == 'boolean' && this.rounded) return 'border-radius: 4px'
+      else return `border-radius: ${this.rounded}px`
+    },
     glow() {
       let conf = {
         elevation: this.elevation,
@@ -38,4 +44,11 @@ export default {
   }
 }
 </script>
+<style>
+  #glow {
+    width: fit-content;
+    height: fit-content;
+    border-radius: inherit;
+  }
+</style>
 
