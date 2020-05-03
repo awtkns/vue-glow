@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div :style="glow">
+      <div style="height: 200px; width: 400px" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { glowStyle } from './underglow'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  props: {
+    color: {
+      type: String,
+      default: 'green'
+    },
+    elevation: {
+      type: Number,
+      default: 24
+    },
+    intense: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    glow() {
+      let conf = {
+        elevation: this.elevation,
+        color: this.color,
+        important: this.important,
+        intense: this.intense
+      }
+
+      return `${glowStyle(conf)}`
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
