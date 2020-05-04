@@ -1,6 +1,14 @@
 {
   "name": "vue-glow",
-  "version": "0.2.0",
+  "version": "0.2.1",
+  "description": "A performant wrapper component to give dynamic glow effects in Vue ",
+  "author": "adam-watkins",
+  "keywords": ["vue", "nuxt", "vuetify", "glow", "component", "colored elevation"],
+  "homepage": "https://github.com/adam-watkins/vue-glow#readme",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/adam-watkins/vue-glow"
+  },
   "main": "dist/VueGlow.umd.js",
   "module": "dist/VueGlow.esm.js",
   "unpkg": "dist/VueGlow.min.js",
