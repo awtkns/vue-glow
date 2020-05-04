@@ -3,14 +3,18 @@
 ![Node.js CI](https://github.com/adam-watkins/vue-glow/workflows/Node.js%20CI/badge.svg?branch=master)
 ![Npm Version](https://img.shields.io/npm/v/vue-glow.svg)
 
-VueGlow is a simple vue compenent that allows components to be given underglow / elevation effects. VueGlow was initailly built to extend vuetify's capabilities. The dynamic glow effect was done in pure css.
+VueGlow is a simple vue component that allows any element to be given a glow / colored elevation effect. 
+VueGlow was initially built to extend vuetify's capabilities, however it will work equally well without Vuetify.
+The dynamic glow effect was done in pure css meaning no additional dependencies.
+
+**Try VueGlow out [here](https://wtkns.dev/vueglow).**
 
 ## Installation
 ```
 npm install vue-glow
 ```
 
-## Usage
+## Basic Usage
 ```html
 <VueGlow>
   I am GLOWING!
@@ -19,15 +23,42 @@ npm install vue-glow
 <VueGlow color="red" intense >
   I am GLOWING bright red!
 </VueGlow>
+
+<VueGlow :color="#3535ff" mode="hex">
+  I am using hex colors!
+</VueGlow>
+
+<VueGlow :color="{ r: '33', g: '66', b: '99' }" mode="rgb">
+  I am using rbg colors!
+</VueGlow>
 ```
 
 ## Props
-| Prop        | Efect           |
-| ------------- |---------------|
-| color      | Changes the color of the glow.  Can either be a named color or a hex value. |
-| evelvation     | Changes the elevation effect of the glow.  Can be a number between 0-24.      |
-| intense | Doubles the intensity of the glow.     |
-| rounded | Allows a border radius to be specified. If the prop is passed as a boolean, a border radius of 4px willl be applied (Vuetify default). |
-| tile | No border radius. |
-| flat | No elevation (meaning no glow). |
+| Prop        | Effect        | Default |
+| ------------|---------------| ------- |
+| color | Changes the color of the glow.  Can either be a color name, hex, a RGB dict, or a HSL dict. | "red" |
+| mode | Changes the mode of the color input. Can be 'name', 'hex', 'rgb', or 'hsl'. | "name" |
+| elevation  | Changes the elevation effect of the glow.  Can be a number between 0-24. | 12 |
+| intense | Doubles the intensity of the glow. | false |
+| rounded | Allows a border radius to be specified. | 4px |
+| tile | No border radius. | false |
+| flat | No elevation (meaning no glow). | false |
 
+
+## Animation
+Use the fade prop to make VueGlow changes it's colors. Set the animation speed with the interval prop.
+Note, animation can result in poor performance at very high animation speeds.
+```html
+<VueGlow fade interval="100" >
+  I am slowly changing colors!
+</VueGlow>
+```
+| Prop        | Effect  | Default |
+|-------------| ------- | ------- |
+| fade | Glow changes hue over time.  Animation speed can be changed with the interval prop. | false |
+| interval | Sets the animation speed.  Speed is in ms.  Default is 50. | 50 |
+
+## Coming Soon
++ Variable Intensity
++ HSV Support
++ More color animations effects
