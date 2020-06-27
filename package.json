@@ -1,6 +1,6 @@
 {
   "name": "vue-glow",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A performant wrapper component to give dynamic glow effects in Vue ",
   "author": "awtkns",
   "keywords": [
