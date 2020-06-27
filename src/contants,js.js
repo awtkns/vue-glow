@@ -24,7 +24,7 @@ export const umbraVals = [
   '0px 10px 14px -6px',
   '0px 11px 14px -7px',
   '0px 11px 15px -7px'
-]
+];
 
 export const punumbraVals = [
   '0px 0px 0px 0px',
@@ -52,7 +52,7 @@ export const punumbraVals = [
   '0px 22px 35px 3px',
   '0px 23px 36px 3px',
   '0px 24px 38px 3px'
-]
+];
 
 export const ambientVals = [
   '0px 0px 0px 0px',
@@ -80,7 +80,7 @@ export const ambientVals = [
   '0px 8px 42px 7px',
   '0px 9px 44px 8px',
   '0px 9px 46px 8px'
-]
+];
 
 export const colorNames = {
   'aliceblue': '#f0f8ff', 'antiquewhite': '#faebd7', 'aqua': '#00ffff',
@@ -130,4 +130,4 @@ export const colorNames = {
   'thistle': '#d8bfd8', 'tomato': '#ff6347', 'turquoise': '#40e0d0',
   'violet': '#ee82ee', 'wheat': '#f5deb3', 'white': '#ffffff',
   'whitesmoke': '#f5f5f5', 'yellow': '#ffff00', 'yellowgreen': '#9acd32'
-}
+};

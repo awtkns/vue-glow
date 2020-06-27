@@ -3,17 +3,36 @@ import { colorNames } from './contants,js'
 export function colorToHSL(color, mode) {
   switch (mode.toLowerCase()) {
     case 'hsl':
-      return color
+      return color;
+    case 'hsv':
+      return hsvToHsl(color);
     case 'name':
-      color = colorNames[color]
+      color = colorNames[color];
     case 'hex':
-      color = hexToRgb(color)
+      color = hexToRgb(color);
     case 'rgb':
-      color = rgbToHSL(color)
+      color = rgbToHSL(color);
       return color;
     default:
       return undefined
   }
+}
+
+
+function hsvToHsl({h, s, v}) {
+  const l = (2 - s) * v / 2;
+
+  if (l !== 0) {
+    if (l === 1) {
+      s = 0
+    } else if (l < 0.5) {
+      s = s * v / (l * 2)
+    } else {
+      s = s * v / (2 - l * 2)
+    }
+  }
+
+  return {h, s, l}
 }
 
 function hexToRgb(hex) {
@@ -32,10 +51,10 @@ function rgbToHSL({r, g, b}) {
   g /= 255;
   b /= 255;
 
-  let h, s, l
+  let h, s, l;
   let min = Math.min(r,g,b),
       max = Math.max(r,g,b),
-      delta = max - min
+      delta = max - min;
 
   if (delta === 0) h = 0;
   else if (max === r) h = ((g - b) / delta) % 6;

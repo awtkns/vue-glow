@@ -36,9 +36,10 @@ npm install vue-glow
 ## Props
 | Prop        | Effect        | Default |
 | ------------|---------------| ------- |
-| color | Changes the color of the glow.  Can either be a color name, hex, a RGB dict, or a HSL dict. | "red" |
+| color | Changes the color of the glow.  Can either be a color name, hex, a RGB dict, HSL dict, or HSV dict. | "red" |
 | mode | Changes the mode of the color input. Can be 'name', 'hex', 'rgb', or 'hsl'. | "name" |
 | elevation  | Changes the elevation effect of the glow.  Can be a number between 0-24. | 12 |
+| intensity | Customize the intensity of the glow. Can be a number between 0-4. | 1 |
 | intense | Doubles the intensity of the glow. | false |
 | rounded | Allows a border radius to be specified. | 4px |
 | tile | No border radius. | false |
@@ -57,8 +58,7 @@ Note, animation can result in poor performance at very high animation speeds.
 |-------------| ------- | ------- |
 | fade | Glow changes hue over time.  Animation speed can be changed with the interval prop. | false |
 | interval | Sets the animation speed.  Speed is in ms.  Default is 50. | 50 |
+| reversed | Reverses the animation. | false |
 
 ## Coming Soon
-+ Variable Intensity
-+ HSV Support
-+ More color animations effects
++ More color animations and effects
