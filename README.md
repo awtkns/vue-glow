@@ -28,7 +28,7 @@ npm install vue-glow
   I am using hex colors!
 </VueGlow>
 
-<VueGlow :color="{ r: '33', g: '66', b: '99' }" mode="rgb">
+<VueGlow :color="{ r: 33, g: 66, b: 99 }" mode="rgb">
   I am using rbg colors!
 </VueGlow>
 ```
