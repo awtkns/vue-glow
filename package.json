@@ -1,6 +1,6 @@
 {
   "name": "vue-glow",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A performant wrapper component to give dynamic glow effects in Vue ",
   "author": "awtkns",
   "keywords": [
@@ -11,7 +11,6 @@
     "component",
     "colored elevation"
   ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "homepage": "https://github.com/awtkns/vue-glow#readme",
   "repository": {
     "type": "git",
