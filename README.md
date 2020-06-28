@@ -13,7 +13,10 @@ The dynamic glow effect was done in pure css meaning no additional dependencies.
 ```
 npm install vue-glow
 ```
-
+## Import
+```
+import VueGlow from 'VueGlow';
+```
 ## Basic Usage
 ```html
 <VueGlow>
