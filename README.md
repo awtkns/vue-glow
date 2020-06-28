@@ -15,7 +15,7 @@ npm install vue-glow
 ```
 ## Import
 ```
-import VueGlow from 'VueGlow';
+import VueGlow from 'vue-glow';
 ```
 ## Basic Usage
 ```html
