@@ -1,5 +1,5 @@
 <template>
-  <div id="glow" :style="style">
+  <div :style="style">
     <slot />
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
     elevation: { default: 12 },
     intense: { type: Boolean, default: false },
     intensity: { type: Number, default: 1 },
-    flat: Boolean,
+    disabled: Boolean,
     tile: Boolean,
     fade: Boolean,
     reversed: Boolean,
@@ -27,6 +27,10 @@ export default {
     fade() {
       if (this.fade) this.startFading();
       else this.stopFading()
+    },
+    disabled() {
+      if (this.disabled) this.stopFading();
+      else if (!this.disabled && this.fade) this.startFading();
     },
 
     //Change the timer interval
@@ -57,7 +61,7 @@ export default {
       else return `border-radius: ${this.rounded}px;`
     },
     glowEffect() {
-      if (this.flat) return '';
+      if (this.disabled) return '';
       let conf = {
         elevation: this.elevation,
         hsl: this.hsl,
@@ -89,10 +93,3 @@ export default {
   }
 }
 </script>
-<style>
-#glow {
-  width: fit-content;
-  height: fit-content;
-}
-</style>
-

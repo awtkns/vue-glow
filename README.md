@@ -43,7 +43,7 @@ npm install vue-glow
 | intense | Doubles the intensity of the glow. | false |
 | rounded | Allows a border radius to be specified. | 4px |
 | tile | No border radius. | false |
-| flat | No elevation (meaning no glow). | false |
+| disabled | Disables the glow effect. Disabling will pause any animation. | false |
 
 
 ## Animation
