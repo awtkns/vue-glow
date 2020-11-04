@@ -1,6 +1,6 @@
 <h1 align="center">
   Vue-Glow
-</p>
+</h1>
 <p align="center">
   <a href="wtkns.dev/vueglow" target="_blank">Live Demo</a></br>
   <em>A performant wrapper component to give dynamic glow effects in Vue</em>
