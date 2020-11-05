@@ -13,7 +13,6 @@ export default {
   props: {
     rounded: { default: 4 },
     color: { default: 'red' },
-    mode: { type: String, default: 'name' },
     elevation: { default: 12 },
     intense: { type: Boolean, default: false },
     intensity: { type: Number, default: 1 },
@@ -66,8 +65,7 @@ export default {
         elevation: this.elevation,
         hsl: this.hsl,
         important: this.important,
-        intensity: this.intense ? this.intensity * 2 : this.intensity,
-        mode: this.mode
+        intensity: this.intense ? this.intensity * 2 : this.intensity
       };
 
       return `${glowStyle(conf)}`
@@ -85,7 +83,7 @@ export default {
       this.hsl.h = (this.reversed ? (this.hsl.h -= 1):(this.hsl.h += 1)) % 360
     },
     colorChanged() {
-      this.hsl = colorToHSL(this.color, this.mode)
+      this.hsl = colorToHSL(this.color)
     }
   },
   beforeDestroy() {

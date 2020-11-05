@@ -32,12 +32,16 @@ import VueGlow from 'vue-glow';
   I am GLOWING bright red!
 </VueGlow>
 
-<VueGlow :color="#3535ff" mode="hex">
+<VueGlow :color="#3535ff">
   I am using hex colors!
 </VueGlow>
 
-<VueGlow :color="{ r: 33, g: 66, b: 99 }" mode="rgb">
+<VueGlow :color="{ r: 33, g: 66, b: 99 }">
   I am using rbg colors!
+</VueGlow>
+
+<VueGlow :color="{ h: 176, s: 88, l: 44 }">
+  I am using Hsv colors!
 </VueGlow>
 ```
 
@@ -45,7 +49,6 @@ import VueGlow from 'vue-glow';
 | Prop        | Effect        | Default |
 | ------------|---------------| ------- |
 | color | Changes the color of the glow.  Can either be a color name, hex, a RGB dict, HSL dict, or HSV dict. | "red" |
-| mode | Changes the mode of the color input. Can be 'name', 'hex', 'rgb', or 'hsl'. | "name" |
 | elevation  | Changes the elevation effect of the glow.  Can be a number between 0-24. | 12 |
 | intensity | Customize the intensity of the glow. Can be a number between 0-4. | 1 |
 | intense | Doubles the intensity of the glow. | false |
