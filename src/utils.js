@@ -1,7 +1,20 @@
 import { colorNames } from './contants,js'
 
-export function colorToHSL(color, mode) {
-  switch (mode.toLowerCase()) {
+
+export function colorToHSL(color) {
+  if (!color) return undefined
+
+  let mode = ''
+  if (typeof color === 'string' && color.length) mode = color.charAt(0) === '#' ? 'hex' : 'name'
+  else if (typeof color === 'object') {
+    if (color.r !== undefined && color.g !== undefined && color.b !== undefined) mode = 'rgb'
+    else if (color.h !== undefined && color.s !== undefined) {
+      if (color.v !== undefined) mode = 'hsv'
+      else if (color.l !== undefined) mode = 'hsl'
+    }
+  }
+
+  switch (mode) {
     case 'hsl':
       return color;
     case 'hsv':
@@ -20,6 +33,7 @@ export function colorToHSL(color, mode) {
 
 
 function hsvToHsl({h, s, v}) {
+  s = s / 100; v = v / 100;
   const l = (2 - s) * v / 2;
 
   if (l !== 0) {
