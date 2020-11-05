@@ -1,13 +1,18 @@
+<h1 align="center">
+  Vue-Glow
+</h1>
+<p align="center">
+  <a href="wtkns.dev/vueglow" target="_blank">Live Demo</a></br>
+  <em>A performant wrapper component to give dynamic glow effects in Vue</em>
+</p>
+<p align="center">
+  <img alt="Node.js CI" src="https://github.com/adam-watkins/vue-glow/workflows/Node.js%20CI/badge.svg?branch=master" />
+  <img alt="Npm Weekly Downloads" src="https://img.shields.io/npm/dw/vue-glow" />
+  <img alt="Npm Total Downloads" src="https://img.shields.io/npm/dt/vue-glow.svg" />
+  <img alt="Npm Version" src="https://img.shields.io/npm/v/vue-glow.svg" />
+</p>
 
-# VueGlow
-![Node.js CI](https://github.com/adam-watkins/vue-glow/workflows/Node.js%20CI/badge.svg?branch=master)
-![Npm Version](https://img.shields.io/npm/v/vue-glow.svg)
-
-VueGlow is a simple vue component that allows any element to be given a glow / colored elevation effect. 
-VueGlow was initially built to extend vuetify's capabilities, however it will work equally well without Vuetify.
-The dynamic glow effect was done in pure css meaning no additional dependencies.
-
-**Try VueGlow out [here](https://wtkns.dev/vueglow).**
+VueGlow is a simple vue component that allows any element to be given a glow / colored elevation effect. VueGlow was initially built to extend vuetify's capabilities, however it will work equally well without Vuetify. The dynamic glow effect was done in pure css meaning no additional dependencies.
 
 ## Installation
 ```
