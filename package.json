@@ -1,15 +1,17 @@
 {
   "name": "vue-glow",
-  "version": "1.4.0",
+  "version": "1.4.3",
   "description": "A performant wrapper component to give dynamic glow effects in Vue ",
   "author": "awtkns",
+  "license" : "MIT",
   "keywords": [
     "vue",
     "nuxt",
     "vuetify",
     "glow",
     "component",
-    "colored elevation"
+    "colored elevation",
+    "vue-glow"
   ],
   "homepage": "https://github.com/awtkns/vue-glow#readme",
   "repository": {
