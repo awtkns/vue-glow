@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="vueglow.png">
+  <img src="vueglow.png" width="300" height="200" alt="Vue Glow Logo"/>
 </p>
 <p align="center">
   <a href="wtkns.dev/vueglow" target="_blank">Live Demo</a></br>
