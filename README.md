@@ -1,6 +1,6 @@
-<h1 align="center">
-  Vue-Glow
-</h1>
+<p align="center">
+  <img src="vueglow.png">
+</p>
 <p align="center">
   <a href="wtkns.dev/vueglow" target="_blank">Live Demo</a></br>
   <em>A performant wrapper component to give dynamic glow effects in Vue</em>
@@ -12,7 +12,9 @@
   <img alt="Npm Version" src="https://img.shields.io/npm/v/vue-glow.svg" />
 </p>
 
-VueGlow is a simple vue component that allows any element to be given a glow / colored elevation effect. VueGlow was initially built to extend vuetify's capabilities, however it will work equally well without Vuetify. The dynamic glow effect was done in pure css meaning no additional dependencies.
+---
+
+**Vue Glow** is a simple vue component that allows any element to be given a glow / colored elevation effect. VueGlow was initially built to extend vuetify's capabilities, however it will work equally well without Vuetify. The dynamic glow effect was done in pure css meaning no additional dependencies.
 
 ## Installation
 ```
