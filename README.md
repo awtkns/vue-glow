@@ -2,7 +2,7 @@
   <img src="vueglow.png" width="300" height="200" alt="Vue Glow Logo"/>
 </p>
 <p align="center">
-  <a href="wtkns.dev/vueglow" target="_blank">Live Demo</a></br>
+  <a href="https://awtkns.com/vueglow" target="_blank">Live Demo</a></br>
   <em>A performant wrapper component to give dynamic glow effects in Vue</em>
 </p>
 <p align="center">
